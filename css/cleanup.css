@@ -1,1 +1,85 @@
 /* write your override styles here */
+
+body {
+  background-color: #000; /* solid black background */
+  color: #fff;            /* white text */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+#wall {
+  position: relative;
+  margin: 40px auto;
+  width: 980px;
+  height: 622px;
+  background-color: transparent; /* clear background */
+  border: 10px solid lime;
+  box-shadow: 10px 10px 40px lime, -10px -10px 40px aqua;
+}
+
+
+.tag-1,
+#tag-2,
+#tag-3,
+#tag-4,
+#tag-5,
+#tag-6,
+#tag-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 980px;
+  height: 622px;
+  opacity: 0.85;
+  border-radius: 15px;
+}
+
+
+.tag-1 {
+  border: 3px solid lime;
+  box-shadow: 0 0 15px lime;
+}
+
+#tag-2 {
+  border: 3px solid aqua;
+  box-shadow: 0 0 15px aqua;
+}
+
+#tag-3.slick {
+  border: 3px dashed #0f0;
+  box-shadow: 0 0 10px #0f0;
+}
+
+
+.parent {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+
+.slick {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+
+div {
+  box-sizing: border-box;
+}
+
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#wall > div {
+  animation: fadeIn 1s ease-in forwards;
+}
